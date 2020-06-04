@@ -1,0 +1,36 @@
+How to Run Me
+1) Set a path to where you have all R script
+   It can be accomplished by these two commands:
+   getwd()
+   setwd()
+
+2) Load all the R scripts to the R using this command:
+   Source("NameOfScript.R") Where NameOfScript is the name used to save the script. 
+
+3) Run the Script, CoverageProbability, as shown below:
+
+   Choose the option :
+   1 - Validation model
+   2 - Corrupted distribution : symetric distribution
+   3 - Asymetric distribution
+   4 - Skewed distribution : Gamma
+   5 - Very Skewed distribution : Exponential
+
+   Example , option <- 1 # It chooses and runs only the validation model
+
+   iteration <- 1000
+
+   N_ Group <- 10 ,20... or 200 % Number of Units . Note : Any even number .
+   TimeVector <- c (0 ,10 ,20 ,30 ,40) or c (0 ,10 ,20 ,30 ,40 ,50 ,60 ,70)
+   MAX <- 9 % The maximum column number of a matrix
+   Step _ Size <- 10
+   Start <- 0
+
+
+Note: Make sure all the four scripts in a folder are loaded to R before running a model of an option; otherwise, it will indicate that a script is not found.
+      Each folder is named according to the value of option that selects and runs the model. For example:
+      option <- 1 # Validation Model
+      option <- 2 # Symmetric corrupted distribution
+      option <- 3 # Asymmetric corrupted distribution
+      option <- 4 # Gamma distribution
+      option <- 5 # Exponential distribution
